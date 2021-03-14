@@ -4,6 +4,12 @@
  * @class Spreadsheet
  */
 class Spreadsheet {
+  /**
+   * Creates an instance of Spreadsheet.
+   * @param {*} originSheetListData
+   * @param {*} { type = "row", isFirstRowOrColumnAsKey = true, keyList = ["", ""] }
+   * @memberof Spreadsheet
+   */
   constructor(
     originSheetListData,
     { type = "row", isFirstRowOrColumnAsKey = true, keyList = ["", ""] }
@@ -52,8 +58,18 @@ class Spreadsheet {
       });
     }
   }
-
+  /**
+   *
+   *
+   * @memberof Spreadsheet
+   */
   get = () => this.sheetListData;
+
+  /**
+   *
+   *
+   * @memberof Spreadsheet
+   */
   getKeyList = () => this.keyList;
 }
 

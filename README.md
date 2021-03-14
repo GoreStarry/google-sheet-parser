@@ -38,10 +38,26 @@ Returns **[Sheets][3]**
 
 ## Sheets
 
+### getSpreadsheetsTagName
+
+### getRawSpreadsheetsMap
+
+### cleanEmptySheetRow
+
+#### Parameters
+
+-   `sheet` **[Array][4]** 
+
 ## Spreadsheet
+
+### get
+
+### getKeyList
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 [3]: #sheets
+
+[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
