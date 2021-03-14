@@ -1,3 +1,8 @@
+/**
+ *
+ *
+ * @class Spreadsheet
+ */
 class Spreadsheet {
   constructor(
     originSheetListData,

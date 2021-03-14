@@ -1,6 +1,15 @@
 const path = require("path");
 const Downloader = require("nodejs-file-downloader");
 
+/**
+ * @param {Object} config {
+ *   download_path,
+ *   GOOGLE_SHEET_URL,
+ *   DOWNLOAD_XLSX_FILE_NAME,
+ *   isOverWriteXLSX,
+ * }
+ * @return {Promise} Downloader.download() returns a promise.
+ */
 function downloadGoogleSheetsToXlsx({
   download_path,
   GOOGLE_SHEET_URL,

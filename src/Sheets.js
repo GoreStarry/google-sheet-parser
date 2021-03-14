@@ -1,3 +1,8 @@
+/**
+ *
+ *
+ * @class Sheets
+ */
 class Sheets {
   constructor(sheetListData) {
     this.sheetsMap = sheetListData.reduce(
@@ -9,9 +14,9 @@ class Sheets {
     );
   }
 
-  getSpreadsheetTagName = () => Object.keys(this.sheetsMap);
+  getSpreadsheetsTagName = () => Object.keys(this.sheetsMap);
 
-  getRawSpreadsheetMap = () => {
+  getRawSpreadsheetsMap = () => {
     return this.sheetsMap;
   };
 

@@ -13,17 +13,18 @@
     "build": "rollup -c"
   },
   "dependencies": {
+    "documentation": "^13.2.0",
     "dotenv": "^8.2.0",
     "node-xlsx": "^0.16.1",
     "nodejs-file-downloader": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.10",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "rollup": "^2.41.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-delete": "^2.0.0",

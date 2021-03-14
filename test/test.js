@@ -7,6 +7,7 @@ const {
   parseJsonFromRawXlsx,
   Sheets,
   Spreadsheet,
+  generateJsonFileFromObj,
 } = require("../dist/index.js");
 
 const {
@@ -33,7 +34,7 @@ const download_path = path.resolve(
   const sheetsMap = newSheetsFromDownloadXLSX({
     download_path,
     DOWNLOAD_XLSX_FILE_NAME,
-  }).getRawSpreadsheetMap();
+  }).getRawSpreadsheetsMap();
 
   const sameTypeSheetsList = Object.keys(sheetsMap).map((name) => {
     return new Spreadsheet(sheetsMap[name], {
@@ -42,7 +43,12 @@ const download_path = path.resolve(
     }).get();
   });
 
-  console.log(sameTypeSheetsList);
+  generateJsonFileFromObj(sameTypeSheetsList, {
+    path: path.resolve(__dirname, "../test/generated"),
+    file_name: "個別地點",
+  });
+
+  console.log(sameTypeSheetsList[2][0]);
 
   // const sheet = new Spreadsheet(sheetsMap["Metro 地點資訊與順序"], {
   //   type: "row",

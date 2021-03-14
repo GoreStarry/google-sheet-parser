@@ -4,6 +4,10 @@ const path = require("path");
 
 const Sheets = require("./Sheets");
 
+/**
+ * @param {Object} config { download_path, DOWNLOAD_XLSX_FILE_NAME }
+ * @return {Sheets}
+ */
 function newSheetsFromDownloadXLSX({ download_path, DOWNLOAD_XLSX_FILE_NAME }) {
   const data = xlsx.parse(
     fs.readFileSync(
