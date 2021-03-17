@@ -4,7 +4,6 @@ const path = require("path");
 const {
   downloadGoogleSheetsToXlsx,
   newSheetsFromDownloadXLSX,
-  parseJsonFromRawXlsx,
   Sheets,
   Spreadsheet,
   generateJsonFileFromObj,
@@ -48,7 +47,7 @@ const download_path = path.resolve(
     file_name: "個別地點",
   });
 
-  console.log(sameTypeSheetsList[2][0]);
+  console.log(sameTypeSheetsList[2][0]["生詞簿"]);
 
   // const sheet = new Spreadsheet(sheetsMap["Metro 地點資訊與順序"], {
   //   type: "row",

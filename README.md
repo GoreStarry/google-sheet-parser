@@ -50,9 +50,17 @@ Returns **[Sheets][3]**
 
 ## Spreadsheet
 
-### get
+### Parameters
 
-### getKeyList
+-   `originSheetListData` **[Array][4]** 
+-   `config` **[Object][1]** { type = "row", isFirstRowOrColumnAsKey = true, keyList = ["", ""] }
+    -   `config.type`   (optional, default `"row"`)
+    -   `config.isFirstRowOrColumnAsKey`   (optional, default `true`)
+    -   `config.keyList`   (optional, default `["",""]`)
+
+## get
+
+## getKeyList
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 

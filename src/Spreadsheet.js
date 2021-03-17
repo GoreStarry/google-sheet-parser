@@ -2,14 +2,12 @@
  *
  *
  * @class Spreadsheet
+ * Creates an instance of Spreadsheet.
+ * @param {Array} originSheetListData
+ * @param {Object} config { type = "row", isFirstRowOrColumnAsKey = true, keyList = ["", ""] }
+ * @memberof Spreadsheet
  */
 class Spreadsheet {
-  /**
-   * Creates an instance of Spreadsheet.
-   * @param {*} originSheetListData
-   * @param {*} { type = "row", isFirstRowOrColumnAsKey = true, keyList = ["", ""] }
-   * @memberof Spreadsheet
-   */
   constructor(
     originSheetListData,
     { type = "row", isFirstRowOrColumnAsKey = true, keyList = ["", ""] }
