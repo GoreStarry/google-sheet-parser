@@ -14,10 +14,10 @@
     "doc": "node ./doc_generate.js"
   },
   "dependencies": {
-    "documentation": "^13.2.0",
-    "dotenv": "^8.2.0",
-    "node-xlsx": "^0.16.1",
-    "nodejs-file-downloader": "^4.2.0"
+    "documentation": "^13.2.5",
+    "dotenv": "^8.6.0",
+    "node-xlsx": "^0.23.0",
+    "nodejs-file-downloader": "^4.12.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
